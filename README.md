@@ -16,7 +16,56 @@ As a contributor to the Interactive Casino project, I was responsible for implem
 - Implementing winning and losing scenarios with corresponding updates to the player’s balance, managed using pointer arithmetic.  
 - Adding clear game rules and feedback messages to enhance the user experience.  
 
-This module demonstrates key programming concepts such as randomization, input validation, and dynamic memory management in C.  
+This module demonstrates key programming concepts such as randomization, input validation, and dynamic memory management in C.
+
+### **Code Snippet**
+```
+void roulette(int *balance)
+{
+    int guess, winnumber, bet;
+
+    printf("<---Roulette--->\n\n");
+    printf("Rules for Roulette:\n");
+    printf("1. Guessing the Right Number: The player chooses a number between 0 and 18. If the randomly generated number matches the player's guess, they win a payout of bet * 18.\n");
+    printf("2. Betting and Losing: If the player's guess does not match the randomly generated number, they lose the amount they bet.\n");
+    printf("3. Range of Possible Outcomes: The random number generated is between 0 and 18, inclusive, representing 19 possible outcomes for each round of the game.\n\n");
+    
+    printf("Enter your bet: ");
+    scanf("%d", &bet);
+
+    if(bet > *balance || bet <= 0 )
+    {
+        printf("Invalid bet amount. Please try again.\n\n");
+        return;
+    }
+
+    printf("Choose a number from the range 0-18 : ");
+    scanf("%d", &guess);
+
+    if (guess < 0 || guess > 18)
+    {
+        printf("Invalid number, please try again.\n\n");
+        return;
+    }
+
+    winnumber = rand() % 19;
+    printf("Winning number is: %d\n", winnumber);
+
+    if (guess == winnumber)
+    {
+        printf("Congratulations!! You win! \n");
+        *balance = *balance + bet*18;
+    }
+
+    else
+    {
+        printf("You lose! Better luck next time!\n");
+        *balance = *balance - bet;
+    }
+
+    show_bal(*balance);   
+}
+```
 
 ## **How to Run the Program**  
 1. Clone the repository:  
