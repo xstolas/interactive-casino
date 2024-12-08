@@ -1,5 +1,5 @@
 # **Interactive Casino**  
-The **Interactive Casino** is a C programming project that simulates the thrill of a virtual casino environment. It features four classic casino games—Roulette, Blackjack, Slots, and Coin Flip—allowing users to place bets, test their luck, and manage their virtual balance. This project showcases modular programming, dynamic memory management, and random number generation in C.  
+The **Interactive Casino** is a C programming project that simulates the thrill of a virtual casino environment. It features four classic casino games—Roulette, Blackjack, Slots, and Coin Flip, allowing users to place bets, test their luck, and manage their virtual balance. This project showcases modular programming, dynamic memory management, and random number generation in C.  
 
 ## **Project Features**  
 - **Roulette**: Bet on a number between 0 and 18. Win 18x the bet for correct guesses.  
@@ -21,11 +21,11 @@ This module demonstrates key programming concepts such as randomization, input v
 ## **How to Run the Program**  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/xstolas/pic_mini_hackathon.git  
+   git clone https://github.com/xstolas/interactive-casino.git  
    ```  
 2. Navigate to the project directory:  
    ```bash  
-   cd pic_mini_hackathon
+   cd interactive-casino
    ```  
 3. Compile the program using GCC or another C compiler:  
    ```bash  
@@ -44,7 +44,7 @@ This module demonstrates key programming concepts such as randomization, input v
   - `<time.h>`: Seeding the random number generator with system time  
 
 ## **Acknowledgments**  
-Special thanks to the team members for their collaboration and to our advisor for his guidance throughout the project.  
+Special thanks to my team members for their collaboration and to our advisor Mr. Sahabzada Betab Badar for his guidance throughout the project.  
 
 ## **License**  
 This project is licensed under the MIT License.  
